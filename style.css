@@ -6,12 +6,12 @@
 }
 
 .header {
-width: 100%;
-min-height: 100vh;
-background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/banner.png);
-background-position: center;
-background-size: cover;
-position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 nav {
@@ -41,4 +41,49 @@ nav {
     font-size: 13px;
     text-decoration: none;
     color: white;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px
+}
+
+.text-box p {
+    margin: 10px 0 40px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    color: white;
+    font-size: 13px;
+    padding: 12px 36px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid white;
+    background: transparent;
+    position: relative;
 }
