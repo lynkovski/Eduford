@@ -4,3 +4,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.header {
+width: 100%;
+min-height: 100vh;
+background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/banner.png);
+background-position: center;
+background-size: cover;
+position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
